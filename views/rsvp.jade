@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  p Please RSVP by submitting the form below. Thank you.
+  form(name="input", action="html_form_action.asp", method="get")
+    fieldset
+      div
+        p(class="threePxBottomMargin") Your Name:
+        input(type="text", name="name")
+
+      div
+        p(class="threePxBottomMargin") Names of Guests (Optional):
+        input(type="text", name="guest_names")
+    
+      div
+        p(class="threePxBottomMargin") Number Attending:
+        input(type="text", name="party_size")
+    
+      div
+        p(class="threePxBottomMargin") Special Requests:
+        textarea(name="requests")
+      
+      div
+        input(type="submit", value="Submit")
+ 

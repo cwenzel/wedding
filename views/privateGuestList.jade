@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul
+  each val in rsvp_data
+    li #{val.name} party of #{val.party_size} 
