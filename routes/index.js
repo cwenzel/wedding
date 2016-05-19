@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
   res.render('index', {
-    title: 'Brian and Melinda'
+    title: 'Bryan and Melinda'
   });
 });
 
